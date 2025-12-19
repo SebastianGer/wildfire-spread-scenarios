@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fire-spread-scenarios"
+version = "0.1.0"
+description = "A brief description of my project."
+readme = "README.md"
+authors = [
+    {name = "Sebastian Gerard", email = "sgerard@kth.se"},
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+# Find packages under the 'src' directory
+where = ["src", "third_party"]
