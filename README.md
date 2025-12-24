@@ -18,7 +18,7 @@ Setting up the environment:
 
 1. Download and prepare LIDC according to [https://github.com/gaozhitong/MoSE-AUSeg/](https://github.com/gaozhitong/MoSE-AUSeg/).
 2. Download the Cityscapes dataset from [https://www.cityscapes-dataset.com/downloads/](https://www.cityscapes-dataset.com/downloads/) (`gtFine_trainvaltest.zip` and `leftImg8bit_trainvaltest.zip`).
-3. Download the MMFire dataset from [TODO](todo).
+3. Download the MMFire dataset from [https://doi.org/10.5281/zenodo.18037549](https://doi.org/10.5281/zenodo.18037549).
 4. Add the corresponding paths in `cfgs/dataset_name/dataset.yaml`. 
 5. If you want to use the probabilistic UNet, follow the setup instruction 'Adding KL divergence for Independent distribution' in [https://github.com/stefanknegt/Probabilistic-Unet-Pytorch](https://github.com/stefanknegt/Probabilistic-Unet-Pytorch).
 
