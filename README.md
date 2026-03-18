@@ -4,6 +4,10 @@ This repository contains a cleaned-up version of the code used for the experimen
 
 If you would like to use diversity-encouraging methods like Particle Guidance or SPELL in your own project, I recommend simply implementing yourself, following the respective papers. It's not much if you already have a working diffusion model implementation. If you want to re-run some experiments from the paper, follow the description below. 
 
+## Updates / Errata
+- In Table 3, the Cityscapes number of Distinct Modes for Naive Sampling was published as 13.3 for two batches, but should be 5.6. For four batches, it was published as 14.1, but should be 6.8. The published numbers were based on an older evaluation that had used erroneous evaluation code. This error did not affect the other rows, since they had been evaluated more recently, after correcting the error. Apologies. 
+
+
 ## MMFire dataset
 
 MMFire is an ambiguous segmentation dataset, meaning that it contains multiple possible outputs for each input. Be aware that the diversity in segmentation masks is not realistic. This dataset is only meant to be used as a tool for evaluating ambiguous segmentation tasks. Since the simulator used for predicing the wildfire spread based on given input data is a comparatively simple computer program, you should expect deep learning models to be able to learn to approximate this mapping rather well. This is very different from real-world observations where such a simple relationship is not known, and deep learning models currently perform much worse. 
