@@ -5,7 +5,11 @@ This repository contains a cleaned-up version of the code used for the experimen
 If you would like to use diversity-encouraging methods like Particle Guidance or SPELL in your own project, I recommend simply implementing yourself, following the respective papers. It's not much if you already have a working diffusion model implementation. If you want to re-run some experiments from the paper, follow the description below. 
 
 ## Updates / Errata
-- In Table 3, the Cityscapes number of Distinct Modes for Naive Sampling was published as 13.3 for two batches, but should be 5.6. For four batches, it was published as 14.1, but should be 6.8. The published numbers were based on an older evaluation that had used erroneous evaluation code. This error did not affect the other rows, since they had been evaluated more recently, after correcting the error. Apologies. 
+The number of distinct modes for Cityscapes using Naive Sampling was incorrectly reported in several tables, due to a bug in the evaluation code. This error did not affect other results, since they had been evaluated more recently, after the bug had been corrected. Our conclusions remain unaffected, since they were mostly based on the HM IoU* metric. Apologies for the oversight. 
+Errata:
+- Table 3, two batches 13.3 -> 5.6 distinct modes
+- Table 3, four batches: 14.1 -> 6.8 distinct modes
+- Tables 5 and D.1, first row: 12.2 -> 4.4 distinct modes
 
 
 ## MMFire dataset
