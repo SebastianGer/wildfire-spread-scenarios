@@ -81,7 +81,7 @@ gerard2025wildfire,
 title={Wildfire Spread Scenarios: Increasing Sample Diversity of Segmentation Diffusion Models with Training-Free Methods},
 author={Sebastian Gerard and Josephine Sullivan},
 booktitle={Northern Lights Deep Learning Conference 2026},
-year={2025},
+year={2026},
 url={https://openreview.net/forum?id=E44d5hzEV0}
 }
 ```
